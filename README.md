@@ -1,3 +1,3 @@
-# Titre du site Web ou application
+# Portfolio Claudia Patry
 
-Court texte présentant votre site Web/application.
+Ceci est mon portfolio fait avec React
