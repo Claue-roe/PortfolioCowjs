@@ -1,0 +1,56 @@
+$Accent: #ff7ef2;
+$Fond: #26182f;
+$Titre: #eed3ff;
+$SecondFond: #a673c6;
+$AccentDeux: #ba8fd5;
+
+.Nav{
+    .FableHeader{
+        width: 40em;
+        height: 13em;
+        position:absolute;
+        top: 9.5em;
+        right: 5px;
+    }
+
+    a,a:link,a:active,a:visited{
+        color:inherit;
+        text-decoration: none;
+
+        &.navActive{
+            font-weight: bold;
+            color: $Fond;
+        }
+    }
+    .large-menu{
+        background: linear-gradient($SecondFond, $AccentDeux);
+        border: 0.1em solid $Accent;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            li{
+                margin: 0.2em;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .small-menu{
+        background: linear-gradient($AccentDeux, $SecondFond);
+        border: 0.1em solid $Accent;
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin: 0.1em;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+}

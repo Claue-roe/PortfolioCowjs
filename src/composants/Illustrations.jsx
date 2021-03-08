@@ -1,9 +1,11 @@
-import './Contenu.scss';
+import './Illustrations.scss';
 import Oeuvre from "./Oeuvre";
 
-export default function Contenu(props){
+export default function Illustrations(){
     return(
-        <div className="Contenu">
+        <div className="Illustrations">
+            <Oeuvre />
+            <Oeuvre />
             <Oeuvre />
             <Oeuvre />
             <Oeuvre />

@@ -1,7 +1,21 @@
+.Entete {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+    h1{
+      font-family: 'Amatic SC', cursive;    
+    }
+    .Blob{
+        width: 60%;
+        height: 30%;
+    } 
 
-.Entete{
-    width: 100%;
-    display:flex;
-    justify-content: space-evenly;
     
 }
+
+@media (max-width : 500px){
+    .cache{
+      display: none;
+    }
+  }
+  

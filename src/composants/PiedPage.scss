@@ -1,13 +1,17 @@
-$Accent: #FF7EF2;
-$Fond: #26182F;
-$Titre : #EED3FF; 
-$SecondFond : #A673C6;
-$AccentDeux : #BA8FD5;
+$Accent: #ff7ef2;
+$Fond: #26182f;
+$Titre: #eed3ff;
+$SecondFond: #a673c6;
+$AccentDeux: #ba8fd5;
 
-.PiedPage{
-    background: linear-gradient($Fond, $AccentDeux);
-    height: 20em;
-    width: 100%;
-    display:flex;
-    justify-content: space-evenly;
+.PiedPage {
+  background: linear-gradient($Fond, $AccentDeux);
+  height: 6em;
+  width: 100%;
+
+    .Socials{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }

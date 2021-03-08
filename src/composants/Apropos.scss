@@ -1,0 +1,49 @@
+$Accent: #FF7EF2;
+$Fond: #26182F;
+$Titre : #EED3FF; 
+$SecondFond : #A673C6;
+$AccentDeux : #BA8FD5;
+$AccentTrois : #784796;
+$Bulle : #D4B3DD;
+
+.Apropos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .bulle{
+        background-color: $Bulle;
+        width: 25em;
+        height:15em;
+        border-radius: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        p{
+            padding: 2em;
+            color: $Fond;
+            text-align: justify;
+            
+        }
+    }
+
+    .Bouton{
+        background-color: $Bulle;
+        color: $Fond;
+        border-radius: 5em;
+        width: 15em;
+        height: 5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Continuer, .Retourner{
+            text-align: center;
+        }
+    }
+
+    .Fable{
+        width: 20em;
+    }
+}
