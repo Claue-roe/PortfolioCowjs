@@ -7,6 +7,8 @@ export default function JeuxVideo(){
             <Oeuvre />
             <Oeuvre />
             <Oeuvre />
+            <Oeuvre />
+            <Oeuvre />
         </div>
     );
 }

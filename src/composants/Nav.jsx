@@ -19,7 +19,7 @@ export default class Nav extends Component {
           smallMenuClassName="small-menu"
           menu={
             <ul>
-              <NavLink to="/Illustrations" activeClassName="navActive"><li>Illustrations</li></NavLink>
+              <NavLink to="/Illustrations" activeClassName="navActive" exact><li>Illustrations</li></NavLink>
               <NavLink to="/jeux-video" activeClassName="navActive"><li>Jeux Vidéo</li></NavLink>
               <NavLink to="/live-2d" activeClassName="navActive"><li>Live 2D</li></NavLink>
               <NavLink to="/en-construction" activeClassName="navActive"><li>À propos</li></NavLink>

@@ -1,16 +1,43 @@
-.Entete {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-    h1{
-      font-family: 'Amatic SC', cursive;    
-    }
-    .Blob{
-        width: 60%;
-        height: 30%;
-    } 
+$Accent: #ff7ef2;
+$Fond: #26182f;
+$Titre: #eed3ff;
+$SecondFond: #a673c6;
+$AccentDeux: #ba8fd5;
 
-    
+.Entete {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding:0 2em 0 2em;
+
+  .Titre{
+    align-self: center;
+    h1{
+      font-family: 'Amatic SC', cursive;
+      color: $Accent;
+      font-size:4.8em;    
+    }
+    h2{
+      font-size:2em;
+    }
+
+    h3{
+      color: $Accent;
+      font-size:1.5em;
+    }
+  }
+
+    .Socials{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  .lang{
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width : 500px){

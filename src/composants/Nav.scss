@@ -9,7 +9,7 @@ $AccentDeux: #ba8fd5;
         width: 40em;
         height: 13em;
         position:absolute;
-        top: 9.5em;
+        top: 9.2em;
         right: 5px;
     }
 
@@ -19,7 +19,8 @@ $AccentDeux: #ba8fd5;
 
         &.navActive{
             font-weight: bold;
-            color: $Fond;
+            color: $Accent;
+            text-shadow: 1px 1px 2px $Fond;
         }
     }
     .large-menu{
