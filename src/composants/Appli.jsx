@@ -1,6 +1,6 @@
 import Entete from './Entete';
 import Nav from './Nav';
-import EnConstruction from './EnConstruction';
+// import EnConstruction from './EnConstruction';
 import Illustrations from './Illustrations';
 import JeuxVideo from './JeuxVideo';
 import Live2D from './Live2D';
@@ -16,10 +16,10 @@ export default function Appli() {
         <Nav />
         <div className="contenu">
           <Switch>
-            <Route path="/illustrations" component={Illustrations}/>
+            <Route exact path="/Illustrations" component={Illustrations}/>
             <Route path="/jeux-video" component={JeuxVideo}/>
             <Route path="/live-2d" component={Live2D}/>
-            <Route path="/en-construction" component={EnConstruction}/>
+            <Route path="/a-propos" component={Apropos}/>
           </Switch>
         </div>
         <PiedPage/>

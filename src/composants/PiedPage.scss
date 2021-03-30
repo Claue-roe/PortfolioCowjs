@@ -6,12 +6,9 @@ $AccentDeux: #ba8fd5;
 
 .PiedPage {
   background: linear-gradient($Fond, $AccentDeux);
-  height: 6em;
   width: 100%;
-
-    .Socials{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+  height: 2em;
+  text-align: center;
+  position:fixed;
+  bottom:0;
 }

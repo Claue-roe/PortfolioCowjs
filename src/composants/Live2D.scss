@@ -1,5 +1,8 @@
 .Live2D{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        list-style: none;
+      }
 }

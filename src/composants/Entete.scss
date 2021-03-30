@@ -4,14 +4,19 @@ $Titre: #eed3ff;
 $SecondFond: #a673c6;
 $AccentDeux: #ba8fd5;
 
-.Entete {
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-  padding:0 2em 0 2em;
 
+
+/**************** Version Grand écran ******************/
+@media (min-width : 600px){
+.Entete {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  
   .Titre{
-    align-self: center;
+    position:absolute;
+    left: 120px;
+    top:50px;
     h1{
       font-family: 'Amatic SC', cursive;
       color: $Accent;
@@ -26,23 +31,113 @@ $AccentDeux: #ba8fd5;
       font-size:1.5em;
     }
   }
+  
+  
+    a {
+      position: absolute;
+      background-color: $SecondFond;
+      border: 5px solid $Accent;
+      border-radius: 50%;
+      width: 2.5em;
+      height: 2.5em;
+      opacity: 0.7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 1.5em;
+        height: 1.5em;
+      }
+      }
+      
 
-    .Socials{
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-  }
-  .lang{
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.5em;
-  }
-}
+    
+    .Mail {
+      top:150px;
+      left:500px;
+    } 
+    .LinkedIn {
+      top:40px;
+      left:700px;
+    }
+    .YouTube {
+      top:250px;
+      left:1050px;
+    } 
+    .Itchio {
+      top:120px;
+      left:900px;
+    } 
+    .ArtStation {
+      top:40px;
+      left:1100px;
+    } 
+    .Instagram {
+      top:150px;
+      left:1300px;
+    } 
+    .Tumblr {
+      top:300px;
+      left:600px;
+    } 
+    .Twitter {
+      top:250px;
+      left:780px;
+    }  
+    
+    
+    .FableHeader{
+      width: 40em;
+      height: 13em;
+      position:absolute;
+      top: 9.2em;
+      right: 5px;
+    }
+    
+    .lang{
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Amatic SC', cursive;
+        font-size: 1.5em;
+      }
+    }
 
+  }//Fin media
+  
+  
+
+/****************Version Mobile******************/
 @media (max-width : 500px){
+
+  .Entete{
+
     .cache{
       display: none;
     }
+
+    .FableHeader{
+      width: 18em;
+      height: 5.5em;
+      position:absolute;
+      top: 10.7em;
+      left:0.5em;
+    }
+
+    .Titre{
+      h1{
+        font-family: 'Amatic SC', cursive;
+        color: $Accent;
+        font-size:4.8em;    
+      }
+      h2{
+        font-size:2em;
+      }
+  
+      h3{
+        color: $Accent;
+        font-size:1.5em;
+      }
+    }
   }
+}
   
