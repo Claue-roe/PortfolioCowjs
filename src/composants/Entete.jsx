@@ -1,15 +1,17 @@
 import "./Entete.scss";
-import Social from "./Social";
+import { motion } from "framer-motion";
 import Mail from "../medias/Icons/mail.png";
 import LinkedIn from "../medias/Icons/linkedin.png";
 import YouTube from "../medias/Icons/youtube.png";
 import Itchio from "../medias/Icons/itchio.png";
 import ArtStation from "../medias/Icons/artstation.png";
-import Tumblr from "../medias/Icons/tumblr.png";
 import Instagram from "../medias/Icons/instagram.png";
+import Tumblr from "../medias/Icons/tumblr.png";
 import Twitter from "../medias/Icons/twitter.png";
+import FableHeader from "../medias/Fable/FullShinyFableHeader.png";
 
-export default function Entete(props) {
+export default function Entete() {
+
   return (
     <header className="Entete">
       <div className="Titre">
@@ -17,59 +19,150 @@ export default function Entete(props) {
         <h2>Claudia Patry</h2>
         <h3>Artiste Multimédia</h3>
       </div>
+
       <div className="Socials cache">
-      <Social 
-          img={Mail} 
-          Lien="mailto:claudia.patry@hotmail.com" 
-          alt="Mail" 
-        />
-        <Social
-          img={LinkedIn}
-          Lien="https://www.linkedin.com/in/claudia-patry/"
-          alt="LinkedIn"
-        />
-        <Social
-          img={YouTube}
-          Lien="https://www.youtube.com/channel/UCmkDbGlUDxgSS70nDdmJQYA"
-          alt="YouTube"
-        />
-        <Social img={Itchio} Lien="https://cowjs.itch.io/" alt="Itchio" />
-        <Social
-          img={ArtStation}
-          Lien="https://www.artstation.com/cowjs"
-          alt="ArtStation"
-        />
-        <Social
-          img={Tumblr}
-          Lien="https://www.tumblr.com/blog/cowjsart"
-          alt="Tumblr"
-        />
-        <Social
-          img={Instagram}
-          Lien="https://www.instagram.com/cowjsart/"
-          alt="Instagram"
-        />
-        <Social
-          img={Twitter}
-          Lien="https://twitter.com/Cowjs21"
-          alt="Twitter"
-        />
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="mailto:claudia.patry@hotmail.com"
+          target="_blank"
+          className="Mail"
+        >
+          <img src={Mail} alt="Mail" />
+        </motion.a>
+
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="https://www.linkedin.com/in/claudia-patry/"
+          target="_blank"
+          className="LinkedIn"
+        >
+          <img src={LinkedIn} alt="LinkedIn" />
+        </motion.a>
+
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="https://www.youtube.com/channel/UCmkDbGlUDxgSS70nDdmJQY"
+          target="_blank"
+          className="YouTube"
+        >
+          <img src={YouTube} alt="YouTube" />
+        </motion.a>
+
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="https://cowjs.itch.io/"
+          target="_blank"
+          className="Itchio"
+        >
+          <img src={Itchio} alt="Itchio" />
+        </motion.a>
+
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="https://www.artstation.com/cowjs"
+          target="_blank"
+          className="ArtStation"
+        >
+          <img src={ArtStation} alt="ArtStation" />
+        </motion.a>
+
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="https://www.instagram.com/cowjsart/"
+          target="_blank"
+          className="Instagram"
+        >
+          <img src={Instagram} alt="Instagram" />
+        </motion.a>
+
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="https://www.tumblr.com/blog/cowjsart"
+          target="_blank"
+          className="Tumblr"
+        >
+          <img src={Tumblr} alt="Tumblr" />
+        </motion.a>
+
+        <motion.a
+          initial={{ scale: 0 }}
+          animate={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href="https://twitter.com/Cowjs21"
+          target="_blank"
+          className="Twitter"
+        >
+          <img src={Twitter} alt="Twitter" />
+        </motion.a>
       </div>
-      <div className="lang">
+
+      <img className="FableHeader" src={FableHeader} alt="Mascotte" />
+
+      <div className="lang cache">
         <h2>En</h2>
         <h2>Fr</h2>
-        {/* <svg
-          className="Blob"
-          viewBox="0 0 800 800"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="#A673C6"
-            stroke="2px solid #FF7EF2"
-            d="M62,-18.8C66.7,-5.7,47.5,16.6,24.3,33.5C1.1,50.3,-26.1,61.8,-45.8,50.5C-65.5,39.1,-77.7,5,-68.8,-13.9C-60,-32.8,-30,-36.5,-0.7,-36.2C28.6,-36,57.3,-32,62,-18.8Z"
-            transform="translate(100 100)"
-          />
-        </svg> */}
       </div>
     </header>
   );
